@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero_section{
+    background-color: #002ed0;
+    padding:0 60px;
+    color: #fff;
+}
+.hero_wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 820px;
+}
+.column_left{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.column_left h1{
+    font-size: 90px;
+}
+.column_left p{
+    font-size: 16px;
+    line-height: 2.3;
+}
+.column_right{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero_img{
+    width: 400px;
+    height: 400px;
+}
+@media screen and (max-width: 1000px)
+{
+    .hero_section{
+        padding:30px;
+    }
+    .hero_wrapper{
+        grid-template-columns: 1fr;
+    }
+    .column_left h1{
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 468px)
+{
+    .hero_wrapper{
+        grid-template-rows: 600px;
+    }
+    .column_left{
+        font-size: 32px;
+    }
+}
+
+/* about section */
+.main_section{
+    padding:60px 60px;
+    background: #002ed0;
+    color: #fff;
+}
+.main_container{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.main_container h1{
+    font-size: 110px;
+    color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    margin-bottom: 32px;
+}
+.main_content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 700px;
+}
+.main_text{
+    padding-right: 20px;
+}
+.main_text h2{
+    font-size:48px;
+    line-height:1.5;
+    margin-bottom: 32px;
+}
+.main_text p{
+   line-height: 2.3;
+}
+.main_image{
+    display: flex;
+    justify-content: center;
+}
+.main_img{
+    width:420px;
+    height: 420px;
+    border-radius: 100%;
+}
+.main_img:hover{
+    box-shadow: 0 0 20px 0 rgb(0, 110, 255);
+}
+@media screen and (max-width: 1000px){
+    .main_section{
+        padding: 30px;
+    }
+    .main_content{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .main_image{
+        margin-top:40px;
+    }
+    .main_img{
+        width:300px;
+        height: 300px;
+    }
+    .main_container h1{
+        font-size:70px;
+    }
+}
